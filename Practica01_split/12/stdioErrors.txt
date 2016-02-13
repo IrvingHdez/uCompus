@@ -1,0 +1,18 @@
+putchar
+puts
+
+
+wfnSprintf.c: En la función ‘int main()’:
+wfnSprintf.c:22:42: aviso: conversión obsoleta de una constante de cadena a ‘char*’ [-Wwrite-strings]
+Myprintf(" WWW.FIRMCODES.COM \n %d", 9);
+                                      ^
+wfnSprintf.c: En la función ‘void Myprintf(char*, ...)’:
+wfnSprintf.c:42:26: error: ‘putchar’ no se declaró en este ámbito
+         putchar(*traverse);
+                          ^
+wfnSprintf.c:52:18: error: ‘putchar’ no se declaró en este ámbito
+         putchar(i);
+                  ^
+wfnSprintf.c:61:27: error: ‘puts’ no se declaró en este ámbito
+         puts(convert(i,10));
+                           ^

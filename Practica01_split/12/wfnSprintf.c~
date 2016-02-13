@@ -1,0 +1,18 @@
+
+/* Formatea en la cadena 'string'  los datos siguiendo el formato. */
+/* Devuelve el tamaño de la cadena generada */
+/* %c – imprime el carácter */
+/* %d – imprime en 3 dígitos el número de 8 bits */
+/* %s – imprime como cadena los datos actuales */
+/* %x – imprime en 2 dígitos el número hexadecimal */
+/* %b – imprime 8 dígitos representando el binario de 8 bits */
+/* ** - Las opciones de %d, %d y %b deben soportar la supresión de los */
+/*      ceros precedentes a menos que se utilice %0b, %0d o %0x donde */
+/*      se especifica que se dejaran los ceros iniciales. */
+
+unsigned short wfnSprintf (char* string, const char* fmt, …)
+
+int main () {
+
+   return 0;
+}
