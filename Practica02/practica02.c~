@@ -1,0 +1,67 @@
+#include <stdio.h>
+#include <assert.h>
+#include <string.h>
+#include <sys/types.h>
+#include <unistd.h>
+
+#include "headers/memory_management.h"
+/* #include "queue_management.h" */
+/* #include "stack_management.h" */
+/* #include "general_functions.h" */
+/* #include "data_conversion.h" */
+/* #include "data_management.h" */
+
+/*Queue Management*/
+
+/*Stack Management*/
+
+/*General Functions*/
+unsigned char bfnCmdLine(char *cpCmd, char *cpCmdList);
+unsigned char bfnLog2(unsigned long dwNum);
+
+/*Data conversion*/
+
+/*Data Management*/
+
+
+int main() {
+   vpfnMalloc(10);
+   //malloc();
+    //printf("Result %d", bfnLog2(64));
+    return 0;
+}
+
+/*Queue Management*/
+
+/*Stack Management*/
+
+/*General Functions*/
+unsigned char bfnCmdLine(char *cpCmd, char *cpCmdList){
+    int pos = 0;
+    while(*cpCmdList){
+        if(*cpCmdList == *cpCmd)
+            return pos;
+        
+        cpCmdList++;
+        pos++;
+    }
+    
+    return '\0';
+}
+unsigned char bfnLog2(unsigned long dwNum){
+    register unsigned int r;
+    register unsigned int shift;
+    
+    r = (dwNum > 0xFFFF) << 4; dwNum >>= r;
+    shift = (dwNum > 0xFF) << 3; dwNum >>= shift; r |= shift;
+    shift = (dwNum > 0xF) << 2; dwNum >>= shift; r |= shift;
+    shift = (dwNum > 0x3) << 1; dwNum >>= shift; r |= shift;
+    r |= (dwNum >> 1);
+    
+    return r++;
+}
+
+/*Data conversion*/
+
+/*Data Management*/
+

@@ -1,0 +1,5 @@
+/*Memory Management*/
+void *vpfnMalloc(unsigned short wSize);
+void vfnFree(void *vpPtr);
+void *realloc(void *vpPtr, unsigned short wSize);
+void *calloc(unsigned short wSize);
